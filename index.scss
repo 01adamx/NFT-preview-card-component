@@ -1,0 +1,138 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+}
+
+.h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.eq:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--main-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    .card {
+        display: flex;
+        min-width: 350px;
+        flex-direction: column;
+        background-color: var(--card-blue);    
+        border-radius: 20px;
+        box-sizing: border-box;
+        max-width: 350px;
+
+        img.eq {
+            width: 100%;
+            padding: 25px;
+            border-radius: 40px;
+        }
+
+        img.view {
+            display: none;
+        }
+    } 
+}
+
+.details {
+    padding: 0px;
+    box-sizing: border-box;
+
+    h1 {
+        color: white;
+        padding: 0 25px 25px 25px;
+        font-size: 25px;
+    }
+
+    p {
+        padding: 0 30px;
+        color: var(--soft-blue);
+    }
+}
+
+.eth-duration {
+    display: flex;
+    padding: 12px 0;
+    justify-content: space-between;
+
+
+    .amount, .duration{
+        display: flex;
+
+        p {
+            padding-left: 4px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.amount {
+    margin-left: 30px;
+
+    .eth {
+        color: var(--cyan);
+    }
+
+}
+
+.duration{
+    margin-right: 30px;
+    .icon-clock {
+        width: 20px;
+        height: 20px;
+    }
+}
+.line {
+    color: var(--line-blue);
+    background-color: var(--line-blue);
+    height: 2px;
+    margin: 0 25px;
+}
+
+.creator {
+    display: flex;
+    padding: 15px 25px 25px 25px;
+    align-items: center;
+}
+
+.name {
+    color: white;
+}
+
+.avater {
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#name {
+    padding-left: 15px;
+}
+.attribution {
+    display: none;
+}
